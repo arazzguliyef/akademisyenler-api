@@ -14,7 +14,7 @@ app.add_middleware(
 )
 
 # JSON dosyasını yükle
-with open("akademics_fixed.json", "r", encoding="utf-8") as f:
+with open("akademics.json", "r", encoding="utf-8") as f:
     akademisyenler = json.load(f)
 
 @app.get("/akademisyenler")
